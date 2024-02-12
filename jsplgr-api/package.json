@@ -1,0 +1,17 @@
+{
+  "name": "jsplgr-api",
+  "version": "0.1.0",
+  "description": "A tiny processor for texts in polytonic Greek",
+  "main": "src/api.js",
+  "scripts": {
+    "genconv": "npx peggy -o src/converter.js peg/converter.pegjs",
+    "pretest": "npm run genconv",
+    "test": "npx jest --verbose test"
+  },
+  "author": "ohmin839",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "peggy": "^3.0.2"
+  }
+}
