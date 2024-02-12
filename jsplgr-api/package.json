@@ -8,6 +8,10 @@
     "pretest": "npm run genconv",
     "test": "npx jest --verbose test"
   },
+  "files": [
+    "src/api.js",
+    "src/converter.js"
+  ],
   "author": "ohmin839",
   "license": "ISC",
   "devDependencies": {

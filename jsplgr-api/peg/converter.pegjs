@@ -43,7 +43,6 @@ function addScoreIotaSubscriptum(text, score=0) {
         return score;
     }
 }
-
 }}
 
 start = letters

@@ -50,7 +50,6 @@ function addScoreIotaSubscriptum(text, score=0) {
     }
 }
 
-
 function peg$subclass(child, parent) {
   function C() { this.constructor = child; }
   C.prototype = parent.prototype;

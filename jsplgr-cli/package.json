@@ -1,0 +1,21 @@
+{
+  "name": "jsplgr-cli",
+  "version": "0.1.0",
+  "description": "A tiny processor for texts in polytonic Greek",
+  "main": "src/index.js",
+  "dependencies": {
+    "jsplgr-api": "file:../jsplgr-api"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "src/index.js",
+    "bin/jsplgrconv"
+  ],
+  "bin": {
+    "jsplgrconv": "bin/jsplgrconv"
+  },
+  "author": "ohmin839",
+  "license": "ISC"
+}
