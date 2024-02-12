@@ -5,7 +5,8 @@
   "main": "src/api.js",
   "scripts": {
     "genconv": "npx peggy -o src/converter.js peg/converter.pegjs",
-    "pretest": "npm run genconv",
+    "gencoll": "npx peggy -o src/collector.js peg/collector.pegjs",
+    "pretest": "npm run genconv & npm run gencoll",
     "test": "npx jest --verbose test"
   },
   "files": [

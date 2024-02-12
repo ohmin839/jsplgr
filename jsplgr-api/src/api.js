@@ -1,7 +1,9 @@
-const toPolytonic =  require("./converter").parse;
+const toPolytonic = require("./converter").parse;
+const toWordsList = require("./collector").parse;
 
 const api = {
-    toPolytonic: toPolytonic
+    toPolytonic: toPolytonic,
+    toWordsList: toWordsList
 };
 
 module.exports = api;

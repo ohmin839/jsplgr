@@ -11,10 +11,12 @@
   },
   "files": [
     "src/index.js",
-    "bin/jsplgrconv"
+    "bin/jsplgrconv",
+    "bin/jsplgrcoll"
   ],
   "bin": {
-    "jsplgrconv": "bin/jsplgrconv"
+    "jsplgrconv": "bin/jsplgrconv",
+    "jsplgrcoll": "bin/jsplgrcoll"
   },
   "author": "ohmin839",
   "license": "ISC"

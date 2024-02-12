@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+"use strict";
+
+const api = require("jsplgr-api");
+
+const readline = require("readline");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    terminal: false
+});
+
+var wordsSet = new Set();
+rl.on("line", function(line) {
+    var split = api.toWordsList(line);
+    for (let w of split) {
+        wordsSet.add(w);
+    }
+});
+
+rl.on("close", function() {
+    for (let w of wordsSet) {
+        console.log(w);
+    }
+});
